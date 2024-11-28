@@ -1,0 +1,10 @@
+^C:\USERS\FRANTIC.DMC\10VECTOR3D\BUILD\CMAKEFILES\51F8DAFCD0BE6BAE41EB918125C79FA5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Frantic.DMC/10Vector3d -BC:/Users/Frantic.DMC/10Vector3d/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Frantic.DMC/10Vector3d/build/vector_algebra.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
